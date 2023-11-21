@@ -27,7 +27,7 @@ RUN apt-get update && \
     #create channel and install \
     conda config --add channels conda-forge && \
     conda config --set channel_priority strict && \
-    conda install orange3 && \
+    conda install orange3 orange3-survival-analysis && \
     #cleanup \
     apt-get remove -y --purge curl && \
     apt-get autoremove -y --purge && \
