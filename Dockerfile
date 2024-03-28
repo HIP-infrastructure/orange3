@@ -20,9 +20,9 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install --no-install-recommends -y curl && \ 
     #install conda \
-    curl -LO https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
-    bash Miniconda3-latest-Linux-x86_64.sh -b -p $PWD/conda && \
-    rm -rf Miniconda3-latest-Linux-x86_64.sh && \
+    curl -LO https://repo.anaconda.com/miniconda/Miniconda3-py310_23.11.0-2-Linux-x86_64.sh && \
+    bash Miniconda3-py310_23.11.0-2-Linux-x86_64.sh -b -p $PWD/conda && \
+    rm -rf Miniconda3-py310_23.11.0-2-Linux-x86_64.sh && \
     export PATH="/apps/orange3/conda/bin:${PATH}" && \
     #create channel and install \
     conda config --add channels conda-forge && \
